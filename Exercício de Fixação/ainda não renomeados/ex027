@@ -1,0 +1,203 @@
+print('ola,Mundo')
+
+nome = input('Digite seu nome?')
+print('E um prazer te conhecer, {}!'.format(nome))
+
+
+n1=input('Digite um valor')
+n2=input('Digite outro valor')
+s=n1+n2
+print(' A Soma entre {} e {} igual a {}!'.format(n1,n2,s))
+
+
+a=input('Digite Algo:')
+print('Qual o Tipo dele',type(a))
+print('Tem Espaco?', a.isspace())
+print('ele e Alfabetico?', a.isalpha())
+print('ta maiuscula?', a.isupper())
+print('ta minuscula?', a.islower())
+print('esta capitalizada?', a.istitle())
+
+
+# coding=utf-8
+n = input('digite um numero')
+a = n - 1
+s = n + 1
+print('analisando o valor {},seu antecessor é{}e seu sucessor e {}'.format(n, (n - 1), (n + 1)))
+
+
+n = int(input('Digite um numero'))
+print('O dobro de {} vale {}.'.format(n, n*2))
+print('o triplo de {} vale {}. \nA raiz quadrada de {} e igual a {}.'.format(n, n*3, n, n**(1/2)))
+
+
+
+n1 = float(input('Primeira nota do aluno:'))
+n2 = float(input('Segunda nota do aluno:'))
+m = (n1+n2) /2
+print('A media entre {} e {} e igual {}'.format(n1,n2,m))
+
+medida = float(input('Uma distancia em metros:'))
+cm = medida * 100
+mm = medida * 1000
+print('a medida de {}m corresponde a {} cm e {}mm'.format(medida,cm,mm))
+
+num = int(input('Digite um numero para ver sua tabuada'))
+print('{} x {:2} = {}'.format(num,1,num*1))
+print('{} x {:2} = {}'.format(num,2,num*2))
+print('{} x {:2} = {}'.format(num,3,num*3))
+print('{} x {:2} = {}'.format(num,4,num*4))
+print('{} x {:2} = {}'.format(num,5,num*5))
+print('{} x {:2} = {}'.format(num,6,num*6))
+print('{} x {:2} = {}'.format(num,7,num*7))
+print('{} x {:2} = {}'.format(num,8,num*8))
+print('{} x {:2} = {}'.format(num,9,num*9))
+print('{} x {:2} = {}'.format(num,10,num*10))
+
+real = float(input('Quanto de dinheiro voce tem na carteira??'))
+dolar = real / 4.87
+print('Com R$ {} voce pode compra U${}'.format(real,dolar))
+
+larg = float(input('Largura da parade :'))
+alt = float(input('Altura da parede'))
+area = larg * alt
+print('Sua parede tem a dimensao de {} x {} e sua area e de {}m2'.format(larg,alt,area))
+tinta = area / 2
+print('Para pintar essa parede, voce vai precisar de {} de tinta'.format(tinta))
+
+
+# coding=utf-8
+preco = float(input('Qual e o preço do produto?R$ '))
+novo = preco - (preco * 5 / 100)
+print('o produto que custava {},na promocao com desconto de 5% vai custar R$ {}'.format(preco, novo))
+
+
+salario = float(input('Qual e o salario do Funcionario? R$'))
+novo = salario + (salario * 15 / 100)
+print('Um funcionario que ganhava R$ {} com 15% de aumento, passa a receber R${}'.format(salario,novo))
+
+
+c = float(input('Informe a temperatura em C:'))
+f = ((9*c)/5)+32
+print('a temperatura de {} C corresponde a {} F!'.format(c,f))
+
+
+dias = int(input('Quanto dias alugados?'))
+km = float(input('Quantos Km rodados?'))
+pago = (dias*60)+ (km*0.15)
+print('O total a pagar e de R$ {}'.format(pago))
+
+
+import math
+from math import trunc
+num = float(input('Digite um valor:'))
+print ('o valor digitado foi {} e a sua porcao inteira e {}'.format(num,math.trunc(num)))
+
+
+import math
+co = float(input('comprimento do cateto oposto:'))
+ca = float(input('comprimento do cateto adiacente:'))
+hi = math.hypot(co,ca)
+print('a hipotenusa vai medir {:.2f}'.format(hi))
+
+import math
+an = float('Digite o angulo que vc deseja')
+seno = math.sin(math.radians(an))
+print('o angulo de {} tem o seno de {}'.format(an,seno)
+cosseno = math.cos(math.radians(an))
+print('o angulo de {} tem o cosseno de {}'.format(cosseno,an))
+tangente = math.tan(math.radians(an))
+print('o angulo de {} tem a tangente de {}'.format(an,tangente))
+
+
+import math
+
+import an as an
+
+an = float('Digite o angulo que vc deseja')
+seno = math.sin(math.radians(an))
+print('o angulo de {} tem o seno de {}'.format(an,seno)
+cosseno = cos(math.radians(an))
+print('o angulo de {} tem o cosseno de {}'.format(cosseno,an))
+tangente = math.tan(math.radians(an))
+print('o angulo de {} tem a tangente de {}'.format(an,tangente))
+
+
+import random
+
+n1 = str(input('Primeiro aluno'))
+n2 = str(input('segundo aluno'))
+n3 = str(input('terceiro aluno'))
+n4 = str(input('Quarto aluno'))
+lista = [n1, n2, n3, n4]
+escolhido = random.choice(lista)
+print('O aluno escolhido foi {}'.format(escolhido))
+
+
+# coding=utf-8
+from random import shuffle
+
+n1 = str(input('Primeiro aluno:'))
+n2 = str(input('Segundo aluno:'))
+n3 = str(input('terceiro aluno:'))
+n4 = str(input('Quarto aluno:'))
+lista = [n1, n2, n3, n4]
+shuffle(lista)
+print('A ordem de apresentaçao sera :')
+print(lista)
+
+
+from random import shuffle
+
+n1=str(input('Primeiro aluno :'))
+n2=str(input('Segundo aluno :'))
+n3=str(input('Terceiro aluno :'))
+n4=str(input('Quarto aluno :'))
+lista = [n1,n2,n3,n4]
+shuffle(lista)
+print('A ordem de Apresentacao sera')
+print(lista)
+
+
+import pygame
+pygame.init()
+pygame.mixer.music.load('ex022.mp3')
+pygame.event.wait()
+
+
+
+nome = str(input('Digite seu nome Completo')).strip()
+print('Analisando seu nome...')
+print('Seu nome em maiusculas e {}'.format(nome.upper()))
+print('Seu nome em minusculas e {}'.format(nome.lower()))
+print('seu nome tem ao todo {}'.format(len(nome)))
+print('Seu primeir nome tem {} Letras'.format(nome.find(' ')))
+separa = nome.split()
+print('Seu primeiro nome e {} e ele tem {} letra'.format(separa[0], len(separa[0])))
+
+
+num = int(input('Inform um numero :'))
+u = num//1%10
+d =num //10%100
+c =num //100%1000
+m =num //1000%10
+print('Analisando o numero {}'.format(num))
+print('Unidade: {}'.format(u))
+print('Dezena: {}'.format(d))
+print('Centena: {}'.format(c))
+print('Milhar:{}'.format(m))
+
+
+cid = str(input('Em que cidade voce nasceu?')).strip( )
+print(cid[:5].upper() =='vespasiano')
+
+
+nome = str(input('Qual e o seu nome completo?')).strip()
+print('Seu nome tem Silva? {}'.format('silva' in nome.lower()))
+
+
+frase = str (input ('digite uma frase')).upper ()  # type: str
+print ("A letra A aparece {} vezes na frase.".format(frase.count("A")))
+print ('A primeira letra A apareceu na posicao {}'.format(frase.find('A')+1))
+print ('A ultima letra A apareceu na posicao {}'.format(frase.rfind('A')+1))
+
